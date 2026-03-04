@@ -26,12 +26,12 @@ export default function SectionHeading({ eyebrow, title, subtitle, align = "cent
           {eyebrow}
         </span>
       )}
-      <h2 className={`text-3xl md:text-4xl lg:text-5xl leading-tight ${light ? "text-white" : "text-navy"}`}>
+      <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight ${light ? "text-white" : "text-navy"}`}>
         {title}
       </h2>
-      <span className="flourish mt-5" />
+      <span className="flourish mt-4 sm:mt-5" />
       {subtitle && (
-        <p className={`mt-5 text-lg max-w-2xl leading-relaxed ${light ? "text-white/70" : "text-warm-gray"}`}>
+        <p className={`mt-4 sm:mt-5 text-base sm:text-lg max-w-2xl leading-relaxed ${light ? "text-white/70" : "text-warm-gray"}`}>
           {subtitle}
         </p>
       )}

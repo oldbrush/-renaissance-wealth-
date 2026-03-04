@@ -44,35 +44,36 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-navy min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative bg-navy min-h-svh flex items-center justify-center overflow-hidden">
         <Image
           src="/images/hero.jpg"
           alt=""
           fill
-          className="object-cover opacity-30"
+          className="object-cover object-center opacity-30"
+          sizes="100vw"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-br from-navy/80 via-navy/60 to-navy/80" />
-        <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 text-center">
+        <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 py-28 sm:py-0 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-xs tracking-[0.3em] uppercase text-gold mb-6 block">
+            <span className="text-xs tracking-[0.3em] uppercase text-gold mb-4 sm:mb-6 block">
               Renaissance Wealth
             </span>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-4">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.15] mb-3 sm:mb-4">
               Expect Excellence.
             </h1>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl text-white/60 leading-[1.1] mb-8 italic">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white/60 leading-[1.15] mb-6 sm:mb-8 italic">
               Experience Exceptional.
             </h1>
             <span className="flourish mx-auto" />
-            <p className="mt-8 text-lg lg:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-6 sm:mt-8 text-base sm:text-lg lg:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
               We guide financial decisions for ultra-high-net-worth individuals + families, delivering the highest standard of stewardship + service.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
                 href="/get-started"
                 className="px-8 py-3.5 bg-gold text-navy text-sm tracking-wide font-medium hover:bg-gold-light transition-colors"
@@ -91,7 +92,7 @@ export default function HomePage() {
       </section>
 
       {/* Value Prop */}
-      <section className="py-24 lg:py-32 bg-off-white">
+      <section className="py-16 sm:py-24 lg:py-32 bg-off-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <SectionHeading
             eyebrow="Our Philosophy"
@@ -102,7 +103,7 @@ export default function HomePage() {
       </section>
 
       {/* Process */}
-      <section className="py-24 lg:py-32 bg-cream">
+      <section className="py-16 sm:py-24 lg:py-32 bg-cream">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <SectionHeading
             eyebrow="The Renaissance Method"
@@ -126,7 +127,7 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="py-24 lg:py-32 bg-off-white">
+      <section className="py-16 sm:py-24 lg:py-32 bg-off-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <SectionHeading
             eyebrow="What We Do"
@@ -137,7 +138,7 @@ export default function HomePage() {
             {services.map((svc, i) => (
               <FadeIn key={svc.title} delay={i * 0.1}>
                 <Link href={svc.href} className="group block h-full">
-                  <div className="h-full p-10 bg-white border border-cream-dark/40 hover:border-gold/50 hover:shadow-lg transition-all duration-300">
+                  <div className="h-full p-6 sm:p-10 bg-white border border-cream-dark/40 hover:border-gold/50 hover:shadow-lg transition-all duration-300">
                     <h3 className="text-2xl text-navy group-hover:text-gold transition-colors">
                       {svc.title}
                     </h3>
@@ -158,7 +159,7 @@ export default function HomePage() {
       </section>
 
       {/* Leadership */}
-      <section className="py-24 lg:py-32 bg-navy">
+      <section className="py-16 sm:py-24 lg:py-32 bg-navy">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <SectionHeading
             light
@@ -188,7 +189,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <FadeIn>
             <blockquote>
-              <p className="text-2xl md:text-3xl text-navy leading-relaxed font-heading italic">
+              <p className="text-xl sm:text-2xl md:text-3xl text-navy leading-relaxed font-heading italic">
                 &ldquo;Built on trust, our work reflects your values, legacy, and life.&rdquo;
               </p>
               <footer className="mt-6">
@@ -203,7 +204,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 lg:py-32 bg-off-white">
+      <section className="py-16 sm:py-24 lg:py-32 bg-off-white">
         <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl text-navy">Your legacy deserves more than a plan.</h2>

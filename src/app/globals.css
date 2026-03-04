@@ -18,8 +18,10 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   body {
+    overflow-x: hidden;
     font-family: var(--font-body);
     color: var(--color-charcoal);
     background-color: var(--color-off-white);

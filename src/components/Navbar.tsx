@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="text-2xl tracking-wider text-navy font-heading">
+          <Link href="/" className="text-lg sm:text-2xl tracking-wider text-navy font-heading whitespace-nowrap">
             RENAISSANCE <span className="text-gold">WEALTH</span>
           </Link>
 
