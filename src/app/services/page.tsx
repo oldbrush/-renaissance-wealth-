@@ -33,6 +33,7 @@ export default function ServicesPage() {
   return (
     <>
       <PageHero
+        image="/images/services.jpg"
         eyebrow="Private Client Services"
         title="The Renaissance Advisory Model"
         subtitle="Empowering founders, entrepreneurs, + ultra-affluent families to master their wealth and streamline financial complexities."

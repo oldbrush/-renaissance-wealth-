@@ -44,6 +44,7 @@ export default function WealthManagementPage() {
   return (
     <>
       <PageHero
+        image="/images/wealth.jpg"
         eyebrow="Wealth Management + Investments"
         title="Align Vision + Expectations"
         subtitle="Managing significant wealth requires more than financial insight. It demands alignment with the full scope of your life, family priorities, professional structures, and long-term vision."

@@ -12,6 +12,7 @@ export default function PartnersPage() {
   return (
     <>
       <PageHero
+        image="/images/services.jpg"
         eyebrow="Partners + Platforms"
         title="Institutional Strength, Personal Touch"
         subtitle="The partners and platforms we leverage to deliver exceptional outcomes for our clients."

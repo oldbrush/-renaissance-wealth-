@@ -48,6 +48,7 @@ export default function PremiumFinancingPage() {
   return (
     <>
       <PageHero
+        image="/images/premium.jpg"
         eyebrow="Premium Financing"
         title="Protect + Preserve"
         subtitle="Our process removes the guesswork from Premium Finance Life Insurance, combining a calculated, conservative approach with the concierge experience advisors and clients deserve."

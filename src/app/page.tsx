@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
 import FadeIn from "@/components/FadeIn";
@@ -44,7 +45,14 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative bg-navy min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-light/30 to-navy" />
+        <Image
+          src="/images/hero.jpg"
+          alt=""
+          fill
+          className="object-cover opacity-30"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/80 via-navy/60 to-navy/80" />
         <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

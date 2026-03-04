@@ -12,6 +12,7 @@ export default function StoryPage() {
   return (
     <>
       <PageHero
+        image="/images/story.jpg"
         eyebrow="Our Story"
         title="Built on Purpose"
         subtitle="The origin and mission behind Renaissance Wealth."

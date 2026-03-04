@@ -1,17 +1,31 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 interface PageHeroProps {
   eyebrow?: string;
   title: string;
   subtitle?: string;
+  image?: string;
 }
 
-export default function PageHero({ eyebrow, title, subtitle }: PageHeroProps) {
+export default function PageHero({ eyebrow, title, subtitle, image }: PageHeroProps) {
   return (
-    <section className="relative bg-navy pt-32 pb-20 lg:pt-40 lg:pb-28">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative bg-navy pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+      {image && (
+        <>
+          <Image
+            src={image}
+            alt=""
+            fill
+            className="object-cover opacity-25"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/90 to-navy/70" />
+        </>
+      )}
+      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}

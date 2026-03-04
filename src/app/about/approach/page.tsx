@@ -52,6 +52,7 @@ export default function ApproachPage() {
   return (
     <>
       <PageHero
+        image="/images/approach.jpg"
         eyebrow="Our Approach"
         title="The Renaissance Method"
         subtitle="A process built for managing complexity, established to create enduring partnerships. Every Renaissance engagement requires two attributes: shared knowledge + trust."

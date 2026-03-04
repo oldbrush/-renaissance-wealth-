@@ -12,6 +12,7 @@ export default function AdvisoryPage() {
   return (
     <>
       <PageHero
+        image="/images/advisory.jpg"
         eyebrow="Advisory Partnerships"
         title="Selective by Design"
         subtitle="We only partner with advisors who share our values + uphold the standards required to guide affluent families."

@@ -46,6 +46,7 @@ export default function TeamPage() {
   return (
     <>
       <PageHero
+        image="/images/team.jpg"
         eyebrow="Meet Our Team"
         title="Expertise You Deserve"
         subtitle="Chosen for their collective experience + unmatched dedication to our clients. Our team of specialists has been carefully selected based on their knowledge, skill, and commitment."
