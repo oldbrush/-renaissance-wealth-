@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://renaissance-wealth.vercel.app/sitemap.xml

@@ -66,9 +66,9 @@ export default function HomePage() {
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.15] mb-3 sm:mb-4">
               Expect Excellence.
             </h1>
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white/60 leading-[1.15] mb-6 sm:mb-8 italic">
+            <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white/60 leading-[1.15] mb-6 sm:mb-8 italic font-heading">
               Experience Exceptional.
-            </h1>
+            </p>
             <span className="flourish mx-auto" />
             <p className="mt-6 sm:mt-8 text-base sm:text-lg lg:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
               We guide financial decisions for ultra-high-net-worth individuals + families, delivering the highest standard of stewardship + service.
@@ -146,7 +146,7 @@ export default function HomePage() {
                     <p className="mt-5 text-warm-gray leading-relaxed">{svc.desc}</p>
                     <span className="mt-6 inline-flex items-center gap-2 text-sm text-gold tracking-wide">
                       Learn More
-                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
                     </span>

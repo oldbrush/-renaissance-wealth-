@@ -14,10 +14,10 @@ export default function Footer() {
               Guiding financial decisions for ultra-high-net-worth individuals + families.
             </p>
             <a
-              href="mailto:advisors@madanplus.com"
+              href="mailto:advisors@renaissancewealth.com"
               className="mt-4 inline-block text-sm text-gold hover:text-gold-light transition-colors"
             >
-              advisors@madanplus.com
+              advisors@renaissancewealth.com
             </a>
           </div>
 

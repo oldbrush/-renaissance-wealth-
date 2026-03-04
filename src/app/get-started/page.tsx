@@ -4,6 +4,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import FadeIn from "@/components/FadeIn";
 
+const inputClass =
+  "w-full px-4 py-3 bg-white border border-cream-dark/60 text-charcoal placeholder:text-warm-gray/50 focus:border-gold transition-colors";
+
 export default function GetStartedPage() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -15,34 +18,34 @@ export default function GetStartedPage() {
 
   return (
     <>
-      <section className="relative bg-navy pt-32 pb-20 lg:pt-40 lg:pb-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="relative bg-navy pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-28">
+        <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             className="max-w-3xl"
           >
-            <span className="text-xs tracking-[0.25em] uppercase text-gold mb-4 block">
+            <span className="text-xs tracking-[0.25em] uppercase text-gold mb-3 sm:mb-4 block">
               Get Started
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl text-white leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-tight">
               Start the Conversation
             </h1>
-            <span className="flourish mt-6" />
-            <p className="mt-6 text-lg text-white/70 leading-relaxed max-w-2xl">
+            <span className="flourish mt-4 sm:mt-6" />
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg text-white/70 leading-relaxed max-w-2xl">
               We work exclusively with families who require discretion, demand integrity, and expect the highest standards of service. Tell us about yourself and we&rsquo;ll be in touch.
             </p>
           </motion.div>
         </div>
       </section>
 
-      <section className="py-24 lg:py-32 bg-off-white">
-        <div className="mx-auto max-w-2xl px-6 lg:px-8">
+      <section className="py-16 sm:py-24 lg:py-32 bg-off-white">
+        <div className="mx-auto max-w-2xl px-5 sm:px-6 lg:px-8">
           {submitted ? (
             <FadeIn>
               <div className="text-center py-16">
-                <h2 className="text-3xl text-navy">Thank you for your interest.</h2>
+                <h2 className="text-2xl sm:text-3xl text-navy">Thank you for your interest.</h2>
                 <span className="flourish mx-auto mt-5" />
                 <p className="mt-5 text-warm-gray leading-relaxed">
                   We&rsquo;ve received your information and will be in touch shortly to begin the conversation about your wealth strategy.
@@ -51,7 +54,7 @@ export default function GetStartedPage() {
             </FadeIn>
           ) : (
             <FadeIn>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} aria-label="Intake form" className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="firstName" className="block text-sm text-charcoal mb-2">First Name</label>
@@ -59,8 +62,10 @@ export default function GetStartedPage() {
                       type="text"
                       id="firstName"
                       name="firstName"
+                      autoComplete="given-name"
                       required
-                      className="w-full px-4 py-3 bg-white border border-cream-dark/60 text-charcoal placeholder:text-warm-gray/50 focus:outline-none focus:border-gold transition-colors"
+                      aria-required="true"
+                      className={inputClass}
                     />
                   </div>
                   <div>
@@ -69,8 +74,10 @@ export default function GetStartedPage() {
                       type="text"
                       id="lastName"
                       name="lastName"
+                      autoComplete="family-name"
                       required
-                      className="w-full px-4 py-3 bg-white border border-cream-dark/60 text-charcoal placeholder:text-warm-gray/50 focus:outline-none focus:border-gold transition-colors"
+                      aria-required="true"
+                      className={inputClass}
                     />
                   </div>
                 </div>
@@ -81,8 +88,10 @@ export default function GetStartedPage() {
                     type="email"
                     id="email"
                     name="email"
+                    autoComplete="email"
                     required
-                    className="w-full px-4 py-3 bg-white border border-cream-dark/60 text-charcoal placeholder:text-warm-gray/50 focus:outline-none focus:border-gold transition-colors"
+                    aria-required="true"
+                    className={inputClass}
                   />
                 </div>
 
@@ -92,7 +101,8 @@ export default function GetStartedPage() {
                     type="tel"
                     id="phone"
                     name="phone"
-                    className="w-full px-4 py-3 bg-white border border-cream-dark/60 text-charcoal placeholder:text-warm-gray/50 focus:outline-none focus:border-gold transition-colors"
+                    autoComplete="tel"
+                    className={inputClass}
                   />
                 </div>
 
@@ -101,7 +111,7 @@ export default function GetStartedPage() {
                   <select
                     id="interest"
                     name="interest"
-                    className="w-full px-4 py-3 bg-white border border-cream-dark/60 text-charcoal focus:outline-none focus:border-gold transition-colors"
+                    className={inputClass}
                   >
                     <option value="">Select an area</option>
                     <option value="private-client">Private Client Services</option>
@@ -118,7 +128,7 @@ export default function GetStartedPage() {
                     id="message"
                     name="message"
                     rows={5}
-                    className="w-full px-4 py-3 bg-white border border-cream-dark/60 text-charcoal placeholder:text-warm-gray/50 focus:outline-none focus:border-gold transition-colors resize-none"
+                    className={`${inputClass} resize-none`}
                   />
                 </div>
 

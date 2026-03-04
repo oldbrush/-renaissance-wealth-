@@ -4,6 +4,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Thank You",
+  description: "Thank you for reaching out to Renaissance Wealth. Our team will be in touch shortly.",
+  robots: { index: false },
 };
 
 export default function ThanksPage() {

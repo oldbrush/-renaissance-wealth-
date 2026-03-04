@@ -5,10 +5,10 @@
   --color-cream-dark: #e8e0d0;
   --color-navy: #1a2332;
   --color-navy-light: #2a3a4e;
-  --color-gold: #c4a265;
-  --color-gold-light: #d4b87a;
+  --color-gold: #a68a4b;
+  --color-gold-light: #c4a265;
   --color-charcoal: #2c2c2c;
-  --color-warm-gray: #8a8278;
+  --color-warm-gray: #6b6259;
   --color-off-white: #faf8f4;
 
   --font-heading: "Superior Title", Georgia, "Times New Roman", serif;
@@ -32,6 +32,17 @@
     font-family: var(--font-heading);
     font-weight: 400;
     letter-spacing: 0.02em;
+  }
+}
+
+@layer base {
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
   }
 }
 
