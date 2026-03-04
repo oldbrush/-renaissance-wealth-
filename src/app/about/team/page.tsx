@@ -62,8 +62,8 @@ export default function TeamPage() {
             {leadership.map((member, i) => (
               <FadeIn key={member.name} delay={i * 0.08}>
                 <div className="flex flex-col md:flex-row gap-8 p-10 bg-white border border-cream-dark/40">
-                  <div className="shrink-0 w-28 h-28 rounded-full bg-navy flex items-center justify-center">
-                    <span className="text-2xl text-gold font-heading">{member.initials}</span>
+                  <div className="shrink-0 w-28 h-28 rounded-full bg-navy flex items-center justify-center" role="img" aria-label={member.name}>
+                    <span className="text-2xl text-gold font-heading" aria-hidden="true">{member.initials}</span>
                   </div>
                   <div>
                     <h3 className="text-2xl text-navy">{member.name}</h3>

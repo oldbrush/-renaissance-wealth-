@@ -23,7 +23,7 @@ export default function Footer() {
 
           {/* Explore */}
           <div>
-            <h4 className="text-xs tracking-[0.2em] uppercase text-white/40 mb-4">Explore</h4>
+            <p className="text-xs tracking-[0.2em] uppercase text-white/40 mb-4 font-heading">Explore</p>
             <ul className="space-y-3">
               <li><Link href="/services" className="text-sm hover:text-gold transition-colors">Private Client Services</Link></li>
               <li><Link href="/wealth-management" className="text-sm hover:text-gold transition-colors">Wealth Management</Link></li>
@@ -33,10 +33,10 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xs tracking-[0.2em] uppercase text-white/40 mb-4">Quick Links</h4>
+            <p className="text-xs tracking-[0.2em] uppercase text-white/40 mb-4 font-heading">Quick Links</p>
             <ul className="space-y-3">
               <li><Link href="/disclosures" className="text-sm hover:text-gold transition-colors">Licensing</Link></li>
-              <li><a href="https://brokercheck.finra.org/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-gold transition-colors">BrokerCheck by FINRA</a></li>
+              <li><a href="https://brokercheck.finra.org/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-gold transition-colors" aria-label="BrokerCheck by FINRA (opens in new tab)">BrokerCheck by FINRA <span aria-hidden="true" className="text-[10px]">&#8599;</span></a></li>
               <li><Link href="/disclosures" className="text-sm hover:text-gold transition-colors">Customer Relationship Summary</Link></li>
               <li><Link href="/disclosures" className="text-sm hover:text-gold transition-colors">Privacy Policy</Link></li>
             </ul>
@@ -44,7 +44,7 @@ export default function Footer() {
 
           {/* CTA */}
           <div>
-            <h4 className="text-xs tracking-[0.2em] uppercase text-white/40 mb-4">Get in Touch</h4>
+            <p className="text-xs tracking-[0.2em] uppercase text-white/40 mb-4 font-heading">Get in Touch</p>
             <p className="text-sm leading-relaxed text-white/60 mb-4">
               Your legacy deserves more than a plan.
             </p>

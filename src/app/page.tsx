@@ -170,8 +170,8 @@ export default function HomePage() {
             {team.map((member, i) => (
               <FadeIn key={member.name} delay={i * 0.1}>
                 <div className="text-center">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-navy-light border-2 border-gold/30 flex items-center justify-center">
-                    <span className="text-2xl text-gold font-heading">
+                  <div className="w-32 h-32 mx-auto rounded-full bg-navy-light border-2 border-gold/30 flex items-center justify-center" role="img" aria-label={member.name}>
+                    <span className="text-2xl text-gold font-heading" aria-hidden="true">
                       {member.name.split(" ").map(n => n[0]).join("")}
                     </span>
                   </div>
